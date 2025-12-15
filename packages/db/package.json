@@ -1,0 +1,24 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "Database package with Prisma ORM",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev",
+    "migrate:prod": "prisma migrate deploy",
+    "push": "prisma db push",
+    "studio": "prisma studio",
+    "reset": "prisma migrate reset --force",
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "prisma": "^7.0.0",
+    "typescript": "^5.4.5"
+  }
+}
